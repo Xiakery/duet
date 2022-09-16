@@ -1,5 +1,4 @@
 <?php
-phpinfo();
-echo "just di od";
-echo "asdasd";
+echo "check this dude";
+echo '<a href="./index1.php"> check it</a>';
 ?>
