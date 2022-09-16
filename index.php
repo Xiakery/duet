@@ -1,4 +1,5 @@
 <?php
 phpinfo();
-echo "just di od"
+echo "just di od";
+echo "asdasd";
 ?>
