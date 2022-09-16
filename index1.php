@@ -1,3 +1,3 @@
 <?php
-echo "<a href='./index.php'>asdad</a>";
+echo "<a href='./css/style.css'>asdad</a>";
 ?>
