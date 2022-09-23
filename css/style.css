@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap");
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ html, body {
 
 body {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -53,6 +55,7 @@ li {
   left: 0;
   width: 100%;
   z-index: 50;
+  padding-top: 20px;
 }
 
 .header__container {
@@ -65,4 +68,15 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  margin-right: 3rem;
+  border: 1px solid #2E3434;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.nav__link:last-child {
+  margin-right: 0;
 }
