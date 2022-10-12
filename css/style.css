@@ -55,7 +55,9 @@ li {
   left: 0;
   width: 100%;
   z-index: 50;
-  padding-top: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(72, 80, 97, 0.6);
 }
 
 .header__container {
@@ -70,13 +72,107 @@ li {
           align-items: center;
 }
 
-.nav__link {
-  font-size: 1.5rem;
-  margin-right: 3rem;
-  border: 1px solid #2E3434;
-  padding: 10px 20px;
-  border-radius: 20px;
+.header__logo img {
+  width: 100%;
+  display: block;
 }
-.nav__link:last-child {
-  margin-right: 0;
+
+.nav__link {
+  font-size: 1.3rem;
+  border: 1px solid #2E3434;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border-color: rgba(177, 224, 239, 0.8);
+  color: #000;
+  background-color: rgb(177, 224, 239);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.nav__link:not(:last-child) {
+  margin-right: 3rem;
+}
+.nav__link:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+@media (max-width: 767.98px) {
+  .nav__link {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.intro {
+  width: 100%;
+  height: 900px;
+  background: url(/img/intro/bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro__info {
+  margin-top: 9rem;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+@media (max-width: 767.98px) {
+  .intro__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.info__title {
+  font-size: 4rem;
+  color: rgb(116, 239, 124);
+  max-width: 300px;
+  margin-bottom: 1rem;
+  background-color: rgba(72, 80, 97, 0.7);
+}
+.info__title span {
+  color: #000;
+}
+@media (max-width: 767.98px) {
+  .info__title {
+    text-align: center;
+  }
+}
+
+.info__text {
+  font-size: 1.5rem;
+  color: rgb(116, 239, 124);
+  background-color: rgba(72, 80, 97, 0.7);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+.info__text span {
+  color: #000;
+}
+@media (max-width: 767.98px) {
+  .info__text {
+    text-align: center;
+  }
+}
+
+.intro__slider {
+  margin-top: 9rem;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+@media (max-width: 767.98px) {
+  .intro__slider {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
